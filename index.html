@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheel of Games</title>
+    <link rel="stylesheet" href="wheel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"s crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+<body>
+    <div class="title-container">
+        <label class="title">WHEEL OF GAMES</label>
+    </div>
+
+    <div class="wheel-container">
+        <svg id="circle" width="700" height="700" viewBox="0 0 300 300"></svg>
+    </div>
+
+    <div class="pick-container hide" id="pick-container">
+        <label class="picked" id="picked"></label>
+        <button class="button remove-all" id="remove-all">Remove All</button>
+    </div>
+
+    <div class="music-container">
+        <div id="yt-container"></div>
+        <label class="url-text">YouTube URL:</label>
+        <input class="url-input" id="url-input">
+        <label class="music-text url-text">Duration:</label>
+        <input class="duration-input" id="duration-input">
+        <label class="music-text" for="volumeSlider">Volume:</label>
+        <input type="range" id="volumeSlider" min="0" max="100" value="50" oninput="updateVolume(this.value)">
+        <label class="music-text hide" id="loading">loading...</label>
+    </div>
+
+    <div class="choices-center">
+        <div class="choices-container">
+            <div class="choices-head-container">
+                <button class="button clear" id="clear">Clear</button>
+                <button class="button paste" id="paste">Paste</button>
+                <button class="button shuffle" id="shuffle">Shuffle <i class='fa-solid fa-shuffle'></i></button>
+                <label class="show-names-text">Show Names?</label>
+                <input type="checkbox" class="show-names-input" id="show-names-input">
+            </div>
+
+            <div class="choices" id="choices"></div>
+        </div>
+    </div>
+
+    <script src="wheel.js"></script>
+</body>

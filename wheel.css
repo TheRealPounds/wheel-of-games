@@ -1,0 +1,177 @@
+body {
+  background: #222;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.title {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.wheel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.pick-container {
+  position: absolute;
+  top: 333px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.84);
+  height: 250px;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0px 0px 200px 100px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picked {
+  color: white;
+  font-size: 60px;
+}
+
+.button {
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: 2px solid;
+  font-size: 20px;
+  font-family: inherit;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.remove-all {
+  margin-left: 15px;
+  background-color: #777;
+  border-color: #222;
+}
+
+.music-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.url-input {
+  width: 300px;
+}
+
+.duration-input {
+  width: 25px;
+}
+
+.url-text {
+  color: white;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.music-text {
+  color: white;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.choices-center {
+  display: flex;
+  justify-content: center;
+}
+
+.choices-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  width: 600px;
+  padding: 10px;
+  background-color: #444;
+  border: 2px solid #999;
+  border-radius: 20px;
+}
+
+.clear {
+  background-color: red;
+  border-color: darkred;
+}
+
+.paste {
+  background-color: #3333ff;
+  border-color: #2a2ab3;
+}
+
+.shuffle {
+  background-color: yellow;
+  border-color: rgb(185, 185, 0);
+}
+
+.show-names-text {
+  color: white;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.choices {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.choice {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.choice-input {
+  width: 100%;
+  padding: 10px 35px 10px 10px;
+  font-size: 16px;
+  font-family: inherit;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.remove {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: #777;
+  border: none;
+}
+
+.add {
+  width: 100%;
+  border-color: #777;
+  margin-bottom: 30px;
+}
+
+.generate {
+  width: 100%;
+  background-color: #777;
+  border-color: #444;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.hide {
+  display: none;
+}
