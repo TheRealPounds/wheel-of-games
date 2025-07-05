@@ -324,8 +324,8 @@ function generateWheel(wheelData) {
 
         let lastSliceIndex = null;
         let totalRotation = 0;
-        const spins = spinDuration + Math.random() * spinDuration;
-        const finalAngle = 9 * spins;
+        const spins = spinDuration + Math.random() * Math.sqrt(spinDuration);
+        const finalAngle = 18 * spins;
         const start = performance.now();
 
         const tickClone = () => {
