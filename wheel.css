@@ -121,6 +121,11 @@ body {
   border-color: rgb(185, 185, 0);
 }
 
+.export {
+  background-color: lightgray;
+  border-color: gray;
+}
+
 .show-names-text {
   color: white;
   font-size: 20px;
@@ -174,4 +179,5 @@ body {
 
 .hide {
   display: none;
+
 }
