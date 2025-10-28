@@ -73,9 +73,10 @@ document.getElementById("shuffle").addEventListener("click", () => {
 });
 
 //Copying item list to clipboard
-document.getElementById("export").addEventListener("click", () => {
+document.getElementById("export").addEventListener("click", async () => {
     let exportString = ("https://therealpounds.github.io/wheel-of-games/\n\n" + wheelData.items.join('\n')).trim();
-    navigator.clipboard.writeText(exportString);
+    console.log("Copying to clipboard")
+    await navigator.clipboard.writeText(exportString);
 });
 
 //Updating show names data from checkbox
@@ -406,4 +407,5 @@ function generateWheel(wheelData) {
 
     svg.addEventListener("click", spinWheel);
 }
+
 
